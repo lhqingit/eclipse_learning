@@ -7,9 +7,9 @@
 	<bean name="/hello" class="com.lhq.controller.HelloController"/>
 	
 	<!-- 处理映射器 -->
-	<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
 	<!-- 处理器适配器 -->
-	<bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
 	<!-- 视图解析器 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
 

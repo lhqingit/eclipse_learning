@@ -1,12 +1,11 @@
 package com.lhq.controller;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.Controller;
+
 
 /**
  * 控制器，可以处理一个单一的请求动作
@@ -14,12 +13,14 @@ import org.springframework.web.servlet.mvc.Controller;
  * @author lhq_i
  *
  */
-public class HelloController implements Controller {
+@Controller
+public class HelloController {
 
 	private static final Log logger = LogFactory.getLog(HelloController.class);
 
-	@Override
-	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+	@RequestMapping(value="/hello")
+	public ModelAndView hello() {
 
 		logger.info("helloController的handleRequest被调用");
 		
