@@ -14,11 +14,11 @@
 	<packaging>war</packaging> 
 
 	<dependencies>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>4.3.7.RELEASE</version>
-		</dependency>
+		</dependency> -->
 		<!-- 连接池 -->
 		<dependency>
 			<groupId>com.jolbox</groupId>
